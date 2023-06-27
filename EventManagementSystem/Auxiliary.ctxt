@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=Auxiliary
+comment1.params=sortColumn\ sortArrangement\ data\ column\ columnWidth\ title\ rowHeight
+comment1.target=void\ CreateTable(int,\ char,\ java.lang.String[][],\ java.lang.String[],\ int[],\ java.lang.String,\ int)
+comment2.params=sortColumn\ sortArrangement\ data\ column\ columnWidth\ title
+comment2.target=void\ CreateTableClub(int,\ char,\ java.lang.String[][],\ java.lang.String[],\ int[],\ java.lang.String)
+numComments=3

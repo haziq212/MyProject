@@ -1,0 +1,5 @@
+123;MATRIX;MATRIX IS REAL
+3767;Chinese Club; Kelab Belajar Bahasa Cina
+3830;Singapore Club;Kelab Kelab Khas untuk Orang Singapore
+4260;India Club;Kelab Khas untuk Orang India
+6263;Communist Club;Karl Marx

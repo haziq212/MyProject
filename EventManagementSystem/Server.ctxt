@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.target=Server
+comment0.text=\r\n\ NOT\ DONE\ \:\ \r\n\ \r\n\ \r\n\ \r\n\ \r\n\ \r\n\ Remove\ Events\r\n\ \r\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment2.params=
+comment2.target=void\ Initiate()
+comment3.params=a
+comment3.target=boolean\ isInteger(java.lang.String)
+comment4.params=a
+comment4.target=boolean\ isDouble(java.lang.String)
+comment5.params=a
+comment5.target=boolean\ isByte(java.lang.String)
+numComments=6
