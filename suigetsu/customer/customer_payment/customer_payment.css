@@ -1,0 +1,20 @@
+/* To display alert message */
+.alert-box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 100px;
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+  }
+  

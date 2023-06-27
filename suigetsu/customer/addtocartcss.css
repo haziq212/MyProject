@@ -1,0 +1,213 @@
+    /* Import Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+a {
+  text-decoration: none;
+} 
+.header {
+    position: top;
+    height: 80px;
+    width: 100%;
+    z-index: 100;
+    padding: 0.5%;
+  }
+  .nav {
+    /*max-width: 1100px;*/
+    width: 80%;
+    margin: 0 auto;
+    background-color: red;
+    border-radius: 25px ;
+    opacity: 80%;;  
+    padding: 2%;
+  }
+  .nav, .nav_item {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+  }
+  .nav_logo,
+  .nav_link,
+  .button {
+    color: #fff;
+  }
+  .nav_logo {
+    font-size: 25px;
+  }
+  .nav_item {
+    column-gap: 25px;
+  }
+  .nav_link:hover {
+    color: #d9d9d9;
+  }
+  .header .button img {
+    width: 20px;
+    height: 20px;
+    align-items: right;
+  }
+  .button {
+    padding: 6px 24px;
+    border: 2px solid #fff;
+    background: transparent;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  .button:active {
+    transform: scale(0.98);
+  }
+.cart{
+  display: flex;
+  background-color: white;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7px 10px;
+  border-radius: 3px;
+  width: 80px;
+}
+.fa-solid{
+  color: red;
+}
+.cart p{
+  height: 22px;
+  width: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 22px;
+  background-color: red;
+  color: white;
+}
+button {
+  width: 100%;
+  position: auto;
+  display: flex;
+  border: 1;
+  border-radius: 5px;
+  margin-left: 5px; /* Decrease the margin-left value */
+  background-color: red;
+  padding: 7px 25px;
+  cursor: pointer;
+  color: white;
+}
+button:hover{
+  background-color: #333;
+}
+.td1{
+  width: 100px;
+}
+.td2{
+  width: 400px;
+}
+.tableCart {
+  height: 150px;
+  border-radius: 25px;
+  background-color: aliceblue;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  margin-top: 20px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  max-height: fit-content;
+}
+
+.font{
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+  color: black;
+  line-height: 25px;
+  font-weight: bold;
+  animation: transitionIn 1s;
+  justify-content: center;
+}
+.greyFont{
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  color: grey;
+  line-height: 5px;
+  font-weight: none;
+  animation: transitionIn 1s;
+  border-top: 20px;
+  white-space: normal;
+}
+.greyFont1{
+  font-family: 'Poppins', sans-serif;
+  font-size: 23px;
+  color: grey;
+  line-height: 5px;
+  font-weight: none;
+  animation: transitionIn 1s;
+  text-align: center;
+  position: top;
+}
+.imgItem{
+  width: 150px;
+  height: 150px;
+  padding: 10px;
+  display: inline-block;
+  border: white;
+  border-radius: 10px;
+  animation: transitionIn 1s;
+}
+.remove{
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  transition: box-shadow 0.2s ease-in-out;
+  animation: transiitionIn 1s;
+  font-size: 30px;
+}
+.price{
+  font-family: 'Poppins', sans-serif;
+  font-size: 25px;
+  color: #181444;
+  line-height: 25px;
+  font-weight: bolder;
+  text-align: center;
+  animation: transitionIn 1s;
+}
+.text6{
+  font-family: 'Poppins', sans-serif;
+  font-size: 33px;
+  color: #181444;
+  font-weight: bold;
+  animation: transitionIn 1s;
+}
+.text7{
+  font-family: 'Poppins', sans-serif;
+  font-size: 33px;
+  color: #181444;
+  font-weight: bold;
+  animation: transitionIn 1s;
+  text-align: right;
+}
+.foot {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  margin: 20px 0px;
+  padding: 10px 0px;
+  border-top: 1px solid #333;
+  position: fixed; /* Change position to fixed */
+  width: 100%;
+  padding: 20px;
+  height: 50px;
+  bottom: 0;
+  left: 0; /* Add left: 0 */
+  position: fixed;
+  z-index: 9999;
+}
+.container{
+  max-height: 540px;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}

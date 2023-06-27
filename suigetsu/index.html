@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Suigetsu</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Fontawesome CDN Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    />
+    <!-- Unicons -->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <nav class="nav">
+        <a href="#home" class="nav_logo"> SUIGETSU</a>
+        <ul class="nav_items">
+          <li class="nav_item"></li>
+        </ul>
+        <a class="button" href="#home" id="form-open"> Login</a>
+      </nav>
+    </header>
+
+    <!-- Home -->
+    <section id="home" class="home">
+      <div class="form_container">
+        <i class="uil uil-times form_close"></i>
+
+        <!-- Login From -->
+        <div class="form login_form">
+          <form action="login.php" method="post" onsubmit="login()">
+            <h2>Login</h2>
+
+            <!-- Input username -->
+            <div class="input_box">
+              <input
+                type="name"
+                placeholder="Enter your username"
+                name="username"
+                id="username"
+                required
+              />
+              <i class="uil uil-envelope-alt email"></i>
+            </div>
+
+            <!-- Input password -->
+            <div class="input_box">
+              <input
+                type="password"
+                placeholder="Enter your password"
+                name="password"
+                id="password"
+                required
+              />
+              <i class="uil uil-lock password"></i>
+              <i class="uil uil-eye-slash pw_hide"></i>
+            </div>
+
+            <button
+              class="button"
+              type="submit"
+              name="submit_login"
+              value="submit"
+            >
+              Login Now
+            </button>
+
+            <div class="login_signup">
+              Don't have an account? <a href="#" id="signup">Signup</a>
+            </div>
+          </form>
+        </div>
+
+        <!-- Signup From -->
+
+        <div class="form signup_form">
+          <form action="signup.php" method="post"">
+          <h2>Signup</h2>
+
+          <!-- Input fullname -->
+
+          <div class="input_box">
+            <input
+              autocomplete="off"
+              type="name"
+              placeholder="Enter your fullname (e.g. Ali Bin Abu)"
+              name="name"
+              id="name"
+              required
+            />
+            <i class="uil uil-user email"></i>
+          </div>
+
+          <!-- Input username -->
+          <div class="input_box">
+            <input
+              autocomplete="off"
+              type="username"
+              placeholder="Enter your username (e.g. user098312)"
+              name="username"
+              id="username"
+              required
+            />
+            <i class="uil uil-envelope-alt email"></i>
+          </div>
+
+          <!-- Input numberPhone -->
+          <div class="input_box">
+            <input
+              autocomplete="off"
+              type="text"
+              placeholder="Enter your phone number (e.g.+60123456789)"
+              name="phoneNumber"
+              id="phoneNumber"
+              pattern="(\+?6?01)[0-46-9]-*[0-9]{7,8}"
+            >
+            <i class="uil uil-phone email"></i>
+          </div>
+
+          <!-- Input address -->
+          <div class="input_box">
+            <input
+              autocomplete="off"
+              type="text"
+              placeholder="Enter street address (e.g. Jalan Ampang)"
+              name="street"
+              id="street"
+              required
+            />
+            <i class="uil uil-map email"></i>
+          </div>
+
+          <!-- Input city -->
+          <div class="input_box">
+            <input
+              autocomplete="off"
+              type="text"
+              placeholder="Enter your city (e.g. Shah Alam)"
+              name="city"
+              id="city"
+              required
+            />
+            <i class="uil uil-map email"></i>
+          </div>
+
+          <!-- Input poscode -->
+          <div class="input_box">
+            <input
+              autocomplete="off"
+              type="text"
+              placeholder="Enter postal code (e.g. 41000)"
+              name="poscode"
+              id="poscode"
+              pattern="\d{5}$"
+              required
+            />
+            <i class="uil uil-map email"></i>
+          </div>
+
+          <!-- State -->
+          <div class="input_box">
+            <label class="profile_details_text">State:</label>
+
+            <select name="state" id="state" required>
+              <option value="Johor">Johor</option>
+              <option value="Kedah ">Kedah</option>
+              <option value="Kelantan">Kelantan</option>
+              <option value="Melaka">Melaka</option>
+              <option value="Negeri Sembilan">Negeri Sembilan</option>
+              <option value="Pahang">Pahang</option>
+              <option value="Perak">Perak</option>
+              <option value="Perlis ">Perlis</option>
+              <option value="Pulau Pinang">Pulau Pinang</option>
+              <option value="Sabah">Sabah</option>
+              <option value="Sarawak">Sarawak</option>
+              <option value="Selangor">Selangor</option>
+              <option value="Terengganu">Terengganu</option>
+              <option value="Wilayah Persekutuan">Wilayah Persekutuan</option>
+            </select>
+          </div>
+
+          <!-- select gender -->
+          <div class="form-group">
+            <label class="profile_details_text">Gender:</label>
+            <select
+              name="customer_gender"
+              class="form-control"
+              required
+            >
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+            </select>
+          </div>
+
+          <!-- create password -->
+          <div class="input_box">
+            <input
+              type="password"
+              placeholder="Create password"
+              name="passwordSignUp"
+              id="passwordSignUp"
+              required
+            />
+            <i class="uil uil-lock password"></i>
+            <i class="uil uil-eye-slash pw_hide"></i>
+          </div>
+
+          <!-- comfirm password -->
+          <div class="input_box">
+            <input
+              type="password"
+              id="password2"
+              name="password2"
+              placeholder="Confirm password"
+              onkeyup="cmpass()"
+              required
+            />
+            <i class="uil uil-lock password"></i>
+            <i class="uil uil-eye-slash pw_hide"></i>
+            <span id="wrong_pass_alert"></span>
+          </div>
+
+          <span id="wrong_pass_alert"></span>
+
+          <button
+            id="button"
+            class="button"
+            type="submit"
+            name="submit_signup"
+            value="check"
+          >
+            Signup
+          </button>
+
+          <div class="login_signup">
+            Already have an account <a href="#" id="login">Login</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+  <footer class="footer">
+    <a
+      href="./group_members/groupMember.html"
+      target="_blank"
+      style="color: red; font-family: cursive"
+      >Team Members</a
+    >
+    <p>@2023 Suigetsu Project</p>
+  </footer>
+</html>
